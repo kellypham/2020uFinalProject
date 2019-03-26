@@ -6,7 +6,7 @@ CSCI2020u FinalProject - Group 17
 - Phuong Pham (kellypham)
 
 Contributions: 
-The project is about Sign In and Create New User windows. After you sign in, you can access to the chatting. The contributions are seperated to all members. Manmeet did the sophisticated user interface and file input and output (save user's information to users.txt and use it to sign in). Talha did the socket input and output (connect Server and User) and scenebuilder (fxml). Phuong made the multithreading (chatting) and README.md file. We together editted and debugged code.
+The project is about Sign In and Create New User windows. After you sign in, you can access to the chatting. The contributions are seperated to all members. Manmeet did the sophisticated user interface and file input and output (save user's information to users.txt and use it to sign in). Talha did the socket input and output (connect Server and User) and scenebuilder (fxml). Phuong made the multithreading, clean up the code and README.md file. We together editted and debugged code.
 
 2. The repository URL: https://github.com/kellypham/2020uFinalProject
 
