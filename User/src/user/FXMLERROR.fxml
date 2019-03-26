@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.FXMLDocumentController">
+   <children>
+      <Label fx:id="label" layoutX="38.0" layoutY="83.0" text="Missing Information, Registration Incomplete! " textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="ErrorOK" layoutX="553.0" layoutY="161.0" mnemonicParsing="false" onAction="#handleReturnToCreate" text="OK" />
+   </children>
+</AnchorPane>
