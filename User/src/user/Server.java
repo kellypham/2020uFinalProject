@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package user;
-
 import java.io.*;
 import java.net.*;
 import java.util.ArrayList;
@@ -13,11 +6,13 @@ import java.util.Scanner;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-
+/**
+ *
+ * @author trash
+ */
 public class Server extends Application {
 
-    @Override 
-    // Override the start method in the Application class
+    @Override // Override the start method in the Application class
     public void start(Stage primaryStage) {
         new Thread(() -> connectToClient()).start();
     }
@@ -56,6 +51,13 @@ public class Server extends Application {
                         e.printStackTrace();
                     }
                 }
+                if(isFromClient.readInt() == 3){
+
+                        String message = isFromClient.readUTF();
+                        osToClient.writeUTF(message);
+                        System.out.println(message);
+
+                }
                 
             }
         }
@@ -64,7 +66,6 @@ public class Server extends Application {
         }
     }
 
-    // Update User's information and save into users.txt file
     private void updateUser(String name, String email, String password) throws IOException {
         String newUser = String.join(" ",name,email,password);
         BufferedWriter writer = new BufferedWriter(new FileWriter("users.txt", true));
@@ -78,8 +79,10 @@ public class Server extends Application {
             writer.close();
         }
     }
-    
-    // Check if the user login or not
+    public static void main(String[] args) {
+        launch(args);
+    }
+
     private boolean login(String user, String password)throws IOException {
        boolean login=false;
         List<String> words = new ArrayList<String>();
@@ -99,10 +102,6 @@ public class Server extends Application {
         }
         return login;
     }
-    
-    public static void main(String[] args) {
-        launch(args);
-    }
-
 
 }
+
