@@ -31,7 +31,7 @@ public class Server extends Application {
 
             // Continuously serve the client
             while (true) {
-                if(isFromClient.readInt() > 0){
+                if(isFromClient.readInt() == 1){
                     String name = isFromClient.readUTF();
                     String email = isFromClient.readUTF();
                     String password = isFromClient.readUTF();
@@ -44,7 +44,7 @@ public class Server extends Application {
                     }
 
                 }
-                if(isFromClient.readInt()==0){
+                if(isFromClient.readInt() == 0){
                     String user = isFromClient.readUTF();
                     String password = isFromClient.readUTF();
                     try {
