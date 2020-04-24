@@ -1,23 +1,35 @@
-CSCI2020u FinalProject - Group 17
+# User Window Project
 
-1. Group Members:
-- Manmeet Singh Choudhary (mannyc101)
-- Talha Rashid (TalhaRashid922)
-- Phuong Pham (kellypham)
+The project is about Sign In and Create New User windows
 
-Contributions: 
-The project is about Sign In and Create New User windows. After you sign in, you can access to the chatting. The contributions are seperated to all members. Manmeet did the sophisticated user interface and file input and output (save user's information to users.txt and use it to sign in). Talha did the socket input and output (connect Server and User) and scenebuilder (fxml). Phuong made the multithreading, clean up the code and README.md file. We together editted and debugged code.
+The application allows users access to the chatting window after signing in through a locally hosted server. 
 
-2. The repository URL: https://github.com/kellypham/2020uFinalProject
+Applying JavaFX libraries
 
-3. Instructions:
-- Download the 2020uFinalProject reposity with master branch (Clone or Download -> Download ZIP)
+- GUI - graphical user interface;
+ 
+- File input/output (save user's information to users.txt and use it to sign in);
+ 
+- Socket input/output (connect Server and User);
+ 
+- Scenebuilder (fxml);
+ 
+- Multithreading
+ 
+into the project.
+
+# Instruction
+
+- Download the reposity with master branch (Clone or Download -> Download ZIP)
+
 - Extract file and open it as a new package in Eclipse/IntelliJ IDEA
+
 - Run the server.java file first, then run the user.java
 
 - File build.gradle must be saved as paralled as 'src' (build.gradle and src are under the same directory)
 
 apply plugin: 'application'
+
 apply plugin: 'java'
  
 repositories {
