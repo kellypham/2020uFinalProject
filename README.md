@@ -18,7 +18,7 @@ Applying JavaFX libraries
  
 into the project.
 
-# Instruction
+## Instruction
 
 - Download the reposity with master branch (Clone or Download -> Download ZIP)
 
@@ -58,3 +58,8 @@ applicationDistribution.from(copyLicense) {
     into ""
 }
 ```   
+
+## Author
+- Kelly Pham
+- Manmeet Singh Choudhary
+- Talha Rashid 
