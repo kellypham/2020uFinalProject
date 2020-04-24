@@ -28,6 +28,8 @@ into the project.
 
 - File build.gradle must be saved as paralled as 'src' (build.gradle and src are under the same directory)
 
+```
+
 apply plugin: 'application'
 
 apply plugin: 'java'
@@ -56,4 +58,4 @@ task copyLicense {
 applicationDistribution.from(copyLicense) {
     into ""
 }
-    
+```   
